@@ -34,9 +34,8 @@ export default function Sidebar({ isOpen, onClose }) {
       )}
 
       <aside
-        className={`fixed inset-y-0 left-0 z-40 flex w-64 flex-col border-r border-[#262622] bg-[#0D0D0D] text-[#FFFDD0] transition-transform duration-200 lg:static lg:translate-x-0 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed inset-y-0 left-0 z-40 flex w-64 flex-col border-r border-[#262622] bg-[#0D0D0D] text-[#FFFDD0] transition-transform duration-200 lg:static lg:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <div className="flex h-16 items-center justify-between border-b border-[#262622] px-5">
           <Link href="/" className="flex items-center gap-2.5" onClick={onClose}>
@@ -79,16 +78,14 @@ export default function Sidebar({ isOpen, onClose }) {
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                  isActive
-                    ? "bg-[#FFFDD0] text-[#0D0D0D]"
-                    : "text-[#FFFDD0]/80 hover:bg-[#1C1C19] hover:text-[#FFFDD0]"
-                }`}
+                className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${isActive
+                  ? "bg-[#FFFDD0] text-[#0D0D0D]"
+                  : "text-[#FFFDD0]/80 hover:bg-[#1C1C19] hover:text-[#FFFDD0]"
+                  }`}
               >
                 <Icon
-                  className={`h-4 w-4 shrink-0 ${
-                    isActive ? "text-[#0D0D0D]" : "text-[#FFFDD0]/70"
-                  }`}
+                  className={`h-4 w-4 shrink-0 ${isActive ? "text-[#0D0D0D]" : "text-[#FFFDD0]/70"
+                    }`}
                 />
                 <span>{item.label}</span>
               </Link>

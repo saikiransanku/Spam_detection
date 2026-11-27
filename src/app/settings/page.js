@@ -31,11 +31,10 @@ export default function SettingsPage() {
           <button
             type="button"
             onClick={() => setSelectedTheme("cream-black")}
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${
-              selectedTheme === "cream-black"
-                ? "border-[#0D0D0D] bg-[#F4F0BE]"
-                : "border-[#CFCB9E] bg-[#FFFDD0]/60 hover:bg-[#F4F0BE]/50"
-            }`}
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${selectedTheme === "cream-black"
+              ? "border-[#0D0D0D] bg-[#F4F0BE]"
+              : "border-[#CFCB9E] bg-[#FFFDD0]/60 hover:bg-[#F4F0BE]/50"
+              }`}
           >
             <div>
               <p className="text-sm font-semibold text-[#0D0D0D]">
@@ -54,11 +53,10 @@ export default function SettingsPage() {
           <button
             type="button"
             onClick={() => setSelectedTheme("black-cream")}
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${
-              selectedTheme === "black-cream"
-                ? "border-[#0D0D0D] bg-[#F4F0BE]"
-                : "border-[#CFCB9E] bg-[#FFFDD0]/60 hover:bg-[#F4F0BE]/50"
-            }`}
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${selectedTheme === "black-cream"
+              ? "border-[#0D0D0D] bg-[#F4F0BE]"
+              : "border-[#CFCB9E] bg-[#FFFDD0]/60 hover:bg-[#F4F0BE]/50"
+              }`}
           >
             <div>
               <p className="text-sm font-semibold text-[#0D0D0D]">
@@ -147,16 +145,14 @@ export default function SettingsPage() {
                   role="switch"
                   aria-checked={enabled}
                   onClick={() => togglePreference(pref.key)}
-                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border border-[#0D0D0D] transition-colors ${
-                    enabled ? "bg-[#0D0D0D]" : "bg-[#E6E2B5]"
-                  }`}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border border-[#0D0D0D] transition-colors ${enabled ? "bg-[#0D0D0D]" : "bg-[#E6E2B5]"
+                    }`}
                 >
                   <span
-                    className={`inline-block h-4 w-4 transform rounded-full transition-transform ${
-                      enabled
-                        ? "translate-x-5.5 bg-[#FFFDD0]"
-                        : "translate-x-1 bg-[#0D0D0D]"
-                    }`}
+                    className={`inline-block h-4 w-4 transform rounded-full transition-transform ${enabled
+                      ? "translate-x-5.5 bg-[#FFFDD0]"
+                      : "translate-x-1 bg-[#0D0D0D]"
+                      }`}
                   />
                 </button>
               </div>

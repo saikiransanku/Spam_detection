@@ -26,11 +26,10 @@ export default function ActivityTable({ items = [] }) {
                 <td className="px-4 py-3.5 text-[#4D4D45]">{item.language}</td>
                 <td className="px-4 py-3.5">
                   <span
-                    className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${
-                      isSpam
-                        ? "border-[#991B1B]/30 bg-[#FEE2E2] text-[#7F1D1D]"
-                        : "border-[#166534]/30 bg-[#DCFCE7] text-[#14532D]"
-                    }`}
+                    className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${isSpam
+                      ? "border-[#991B1B]/30 bg-[#FEE2E2] text-[#7F1D1D]"
+                      : "border-[#166534]/30 bg-[#DCFCE7] text-[#14532D]"
+                      }`}
                   >
                     {item.classification}
                   </span>
