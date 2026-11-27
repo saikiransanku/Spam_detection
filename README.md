@@ -10,7 +10,10 @@ Repository workspace organized into dedicated modules for the frontend UI, backe
   - Notebooks: [01_data_analysis.ipynb](./ml-engine/notebooks/01_data_analysis.ipynb), [02_baseline_models.ipynb](./ml-engine/notebooks/02_baseline_models.ipynb), [03_transformer_training.ipynb](./ml-engine/notebooks/03_transformer_training.ipynb), [04_adversarial_training.ipynb](./ml-engine/notebooks/04_adversarial_training.ipynb), [05_hybrid_model.ipynb](./ml-engine/notebooks/05_hybrid_model.ipynb), [06_evaluation.ipynb](./ml-engine/notebooks/06_evaluation.ipynb)
   - Source: [preprocessing/](./ml-engine/src/preprocessing/), [augmentation/](./ml-engine/src/augmentation/), [features/](./ml-engine/src/features/), [models/](./ml-engine/src/models/), [training/](./ml-engine/src/training/), [evaluation/](./ml-engine/src/evaluation/)
   - Artifacts: [checkpoints/](./ml-engine/checkpoints/), [experiments/](./ml-engine/experiments/)
-- **Backend** ([backend/](./backend/)) — API application layer ([app/routes/](./backend/app/routes/), [app/schemas/](./backend/app/schemas/), [app/services/](./backend/app/services/), [requirements.txt](./backend/requirements.txt))
+- **Backend** ([backend/](./backend/)) — API application layer & ML pipeline ([app/routes/](./backend/app/routes/), [app/schemas/](./backend/app/schemas/), [app/services/](./backend/app/services/), [requirements.txt](./backend/requirements.txt))
+  - Datasets: [raw/](./backend/datasets/raw/), [processed/](./backend/datasets/processed/), [splits/](./backend/datasets/splits/)
+  - Source: [preprocessing/](./backend/src/preprocessing/), [models/](./backend/src/models/), [fusion/](./backend/src/fusion/), [evaluation/](./backend/src/evaluation/), [inference/](./backend/src/inference/)
+  - Artifacts & Outputs: [experiments/](./backend/experiments/), [artifacts/](./backend/artifacts/), [reports/](./backend/reports/)
 - **Research** ([research/](./research/)) — [literature_review/](./research/literature_review/), [methodology/](./research/methodology/), [experiments/](./research/experiments/), [results/](./research/results/), [documentation/](./research/documentation/)
 - **Documentation** ([docs/](./docs/)) — Project documentation and references
 
